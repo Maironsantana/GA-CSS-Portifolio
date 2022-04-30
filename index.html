@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f9ed7e06a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Portifólio</title>
+</head>
+
+<body>
+    <header>
+        <div class="iconphoto">
+            <img src="./img/Untitled.pdf" alt="profilepic">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/Maironsantana">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:maironnscmt@gmail.com">e-mail</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/mairon-santana-1b4187232/">linkedin</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div>
+                <h1>Mairon Santana</h1>
+                <h5>Programador Front-End</h5>
+            </div>
+            <div onclick= "displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis a consequuntur dolore incidunt
+                    quod voluptas ad fugiat, voluptatem in voluptates deleniti amet itaque neque ipsum esse officiis
+                    doloribus similique sequi quae praesentium? Provident obcaecati voluptates sit alias id ipsa
+                    mollitia, quas pariatur magni nisi est. Laborum dicta molestiae minima aperiam?
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu e-mail">
+                    <button>enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

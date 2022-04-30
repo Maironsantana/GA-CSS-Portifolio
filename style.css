@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #ccffff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background: url(./img/pexels-adrien-olichon-2387793.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 45px;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li {
+    padding: 10px;
+}
+
+header ul li a {
+    transition: 300ms;
+}
+
+
+header ul li a:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+
+ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 60px;
+}
+
+.container h5 {
+    font-size: 25px;
+}
+
+#arrow{
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation{
+    transition: 300ms;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active{
+    display: block !important;
+}
+
+#about p {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.form {
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 40%;
+    margin-top: 30px;
+}
+
+
+.form input {
+    color: black;
+    padding: 5px 10px;
+    width: 50%;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #ccffff 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+
+.form button:hover{
+    background-position: left bottom;
+    color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 810px){
+    .form{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container h1{
+        font-size: 30px;        
+    }
+    .container h5{
+        font-size: 15px;
+    }
+    #about p{
+        max-width: 80%;
+        text-align: justify;
+    }
+
+
+}
